@@ -22,8 +22,8 @@ $$
 ## Control Strategy
 - **Controller Type:** PD (Proportional-Derivative) with a high-pass filtered derivative for noise reduction.
 - **Design Method:** Root locus technique in MATLAB to place system poles according to desired specifications:
-  - Settling Time \(T_s = 3s\)
-  - Overshoot \(\leq 5\%\)
+  - Settling Time $T_s = 3s
+  - Overshoot $eq 5
 - **Practical Considerations:** Filtered derivative reduces noise amplification caused by the real-world ball position sensor.
 
 ---
