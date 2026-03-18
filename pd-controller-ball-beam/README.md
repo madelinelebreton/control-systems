@@ -22,8 +22,8 @@ $$
 ## Control Strategy
 - **Controller Type:** PD (Proportional-Derivative) with a high-pass filtered derivative for noise reduction.
 - **Design Method:** Root locus technique in MATLAB to place system poles according to desired specifications:
-  - Settling Time $T_s = 3s
-  - Overshoot $eq 5
+  - Settling Time T_{s} = 3 s
+  - Overshoot 5%
 - **Practical Considerations:** Filtered derivative reduces noise amplification caused by the real-world ball position sensor.
 
 ---
@@ -31,16 +31,19 @@ $$
 ## Key Equations
 
 - Plant transfer function:  
+
 $$
 P_{bb}(s) = \frac{0.419}{s^2}
 $$
 
 - PD Controller (Practical):  
+
 $$
 C(s) = K_c \left( z + \frac{\omega_f s}{s + \omega_f} \right)
 $$
 
 - Damping ratio and natural frequency (from design specs):  
+
 $$
 \zeta = -\frac{\ln(\%OS/100)}{\sqrt{\pi^2 + \ln^2(\%OS/100)}}, \quad 
 \omega_n = \frac{4\zeta}{T_s}
