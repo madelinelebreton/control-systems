@@ -3,7 +3,7 @@
 ## Overview
 This project implements a **PD (Proportional-Derivative) controller** to stabilize and control the position of a ball on a beam using MATLAB and Simulink. The project involves modeling a **cascade electromechanical system**, designing an ideal and practical PD compensator, and addressing real-world issues such as sensor noise and underdamped responses.
 
----
+
 
 ## System Description
 The system consists of two interconnected components:
@@ -17,7 +17,7 @@ $$
 P_{bb}(s) = \frac{0.419}{s^2}
 $$
 
----
+
 
 ## Control Strategy
 - **Controller Type:** PD (Proportional-Derivative) with a high-pass filtered derivative for noise reduction.
@@ -26,7 +26,7 @@ $$
   - Overshoot 5%
 - **Practical Considerations:** Filtered derivative reduces noise amplification caused by the real-world ball position sensor.
 
----
+
 
 ## Key Equations
 
@@ -49,7 +49,7 @@ $$
 \omega_n = \frac{4\zeta}{T_s}
 $$
 
----
+
 
 ## Results
 - Step response demonstrates **stabilization of the ball at the desired position**.
@@ -59,14 +59,14 @@ $$
 ![Step Response](results/step_response.png)
 ![Root Locus](results/root_locus.png)
 
----
+
 
 ## Challenges & Debugging
 - Initial system oscillated persistently despite decreasing amplitude due to **underdamped response**.
 - Adjusting **zero location** increased damping and reduced oscillations.
 - Highlighted the practical limitation of PD control: **steady-state error is not completely eliminated** without integral action.
 
----
+
 
 ## Tools Used
 - MATLAB (Control System Toolbox)
