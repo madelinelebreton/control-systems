@@ -13,9 +13,9 @@ The system consists of two interconnected components:
 
 The motor tilts the beam (inner loop), while the controller adjusts the tilt to maintain the ball at a desired position (outer loop). For this lab, the servo motor is assumed **perfect**, reducing the system to a **double integrator**:
 
-\[
+$$
 P_{bb}(s) = \frac{0.419}{s^2}
-\]
+$$
 
 ---
 
@@ -31,20 +31,20 @@ P_{bb}(s) = \frac{0.419}{s^2}
 ## Key Equations
 
 - Plant transfer function:  
-\[
+$$
 P_{bb}(s) = \frac{0.419}{s^2}
-\]
+$$
 
 - PD Controller (Practical):  
-\[
+$$
 C(s) = K_c \left( z + \frac{\omega_f s}{s + \omega_f} \right)
-\]
+$$
 
 - Damping ratio and natural frequency (from design specs):  
-\[
+$$
 \zeta = -\frac{\ln(\%OS/100)}{\sqrt{\pi^2 + \ln^2(\%OS/100)}}, \quad 
 \omega_n = \frac{4\zeta}{T_s}
-\]
+$$
 
 ---
 
