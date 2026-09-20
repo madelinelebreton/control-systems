@@ -25,6 +25,8 @@ filter used to denoise and decode a hidden signal in an audio file.
   ([`simulink-models`](simulink-models))
 
 ## Demo
+![Ball and beam controller](pid-controller-ballbeam/demo.MOV)
+
 <img width="640" height="525" alt="image" src="https://github.com/user-attachments/assets/62adaf01-95d5-4a1c-bd56-129a540d1752" />
 
 
