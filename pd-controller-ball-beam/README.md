@@ -1,4 +1,4 @@
-# Ball-and-Beam Control System Using PD Compensator
+# Ball and Beam Control System Using PD Compensator
 
 ## Overview
 This project implements a **PD (Proportional-Derivative) controller** to stabilize and control the position of a ball on a beam using MATLAB and Simulink. The project involves modeling a **cascade electromechanical system**, designing an ideal and practical PD compensator, and addressing real-world issues such as sensor noise and underdamped responses.
@@ -55,10 +55,6 @@ $$
 - Step response demonstrates **stabilization of the ball at the desired position**.
 - Oscillations were reduced by adjusting the **zero location (z)** of the PD controller, improving damping.
 - The system reaches a steady-state with minimal overshoot and acceptable settling time.
-  
-![Step Response](results/step_response.png)
-![Root Locus](results/root_locus.png)
-
 
 
 ## Challenges & Debugging
